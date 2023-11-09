@@ -28,6 +28,40 @@ console.log(nombre[0]);
 // Tratando de poner el nombre con la primera letra en mayuscula y las demás en minúsculas
 
 nombre = "feDeriCO"
-nombre = nombre[0].toUpperCase() + nombre.toLowerCase()
+// nombre = nombre[0].toUpperCase() + nombre.toLowerCase()
 
-console.log(nombre);
+// charAt obtiene el caracter en la posición indicada
+console.log(nombre.charAt(2));
+// console.log(nombre [2]);
+// slice corta desde la posicion indicada
+console.log(nombre.slice(1));
+
+console.log(nombre.charAt(0).toUpperCase());
+console.log(nombre.slice(1).toLowerCase());
+console.log(nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase());
+
+let nombre_completo = "     Pérez González, María   "
+let nombre_sin_espacios = nombre_completo.trim();
+
+console.log(nombre_sin_espacios);
+
+let nombre_arreglado = nombre_sin_espacios.split(", ")
+
+nombre_arreglado = nombre_arreglado[1] + " " + nombre_arreglado[0] 
+console.log(nombre_arreglado);
+
+
+// EJERCICIO "Hoy es 8 del 11 del 2023 a partir de 
+let fecha = "2023/11/8"
+
+let array_fecha = fecha.split("/")
+console.log(array_fecha);
+
+console.log(`Hoy es ${array_fecha[2]} del ${array_fecha[1]} del ${array_fecha[0]}`);
+// let fecha_ejercicio = fecha_ejercicio[2] + "del" + fecha_ejercicio[1] +"del"+ fecha_ejercicio[0] 
+
+
+
+
+// si quieres saber el length, cuenta los espacios, pero no nos interesan. 
+// Para quitar los espacios se utiliza trim()

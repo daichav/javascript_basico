@@ -16,10 +16,13 @@ console.log(3 > 3);// si 3 es mayor que 3
 console.log(3 == 3);//para comparar es doble == 
 console.log(3 == "3");// "3" es una cadena de texto
 console.log(3 === "3"); // === es igualdad estricta
-console.log(3 != 3);// ** preguntar**
+console.log(3 != 3);// comparador de diferencia, es verdadero si son diferentes
 
 
 
+//  Operadores Lógicos
+console.log((true) && (true)); // y "lógico"para que algo sea verdadero, todas las condiciones deben ser verdaderas
+console.log((true) || (false));// o "lógico"
 
 // el propio lenguaje, evalua condiciones determinadas, 
 // y evalua es verdadero o falso, siempre equivale a responder una pregunta
